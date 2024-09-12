@@ -1,0 +1,28 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Contracts = exports.Commands = void 0;
+const generate_1 = __importDefault(require("./commands/generate"));
+const install_1 = __importDefault(require("./commands/install"));
+const download_1 = __importDefault(require("./commands/download"));
+const transpile_1 = __importDefault(require("./commands/transpile"));
+const Commands = {};
+exports.Commands = Commands;
+Commands['generate'] = generate_1.default;
+Commands['install'] = install_1.default;
+Commands['download'] = download_1.default;
+Commands['transpile'] = transpile_1.default;
+const generate_2 = __importDefault(require("./contracts/generate"));
+const install_2 = __importDefault(require("./contracts/install"));
+const message_composer_1 = __importDefault(require("./contracts/message-composer"));
+const react_query_1 = __importDefault(require("./contracts/react-query"));
+const recoil_1 = __importDefault(require("./contracts/recoil"));
+const Contracts = {};
+exports.Contracts = Contracts;
+Contracts['generate'] = generate_2.default;
+Contracts['install'] = install_2.default;
+Contracts['message-composer'] = message_composer_1.default;
+Contracts['react-query'] = react_query_1.default;
+Contracts['recoil'] = recoil_1.default;

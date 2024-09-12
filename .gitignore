@@ -3,9 +3,10 @@
 *.log
 **/node_modules
 coverage
-packages/**/build
-packages/**/main
-packages/**/module
+# TEMP allow so this package can be imported by a package.json
+#packages/**/build
+#packages/**/main
+#packages/**/module
 launch.json
 .vscode/settings.json
 .idea/
